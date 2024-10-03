@@ -1,4 +1,7 @@
 /* eslint-disable react/prop-types */
+// import React from "react";
+import logo from "../assets/kmkibayern-logo-whitebg.png";
+
 function displayLanguage(lang) {
 	switch (lang) {
 		case "en":
@@ -12,13 +15,13 @@ function displayLanguage(lang) {
 	}
 }
 
-export default function Hero(props) {
+function Hero(props) {
 	return (
 		<div className="hero">
-            <img src="./assets/kmkibayern-logo-whitebg.png" alt="kmkibayern-logo" />
 			<h1>KMKI Bayern</h1>
 			<p>{displayLanguage(props.lang)}</p>
 		</div>
 	);
 }
 
+export default Hero;
