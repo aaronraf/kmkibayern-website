@@ -1,3 +1,6 @@
+# Notes untuk PK
+- Buat update list PK periode baru: clone repo & update databasePK.js, kasi notes yang jelas (nama, periode kerja) pas submit PR
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
