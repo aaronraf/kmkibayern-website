@@ -4,7 +4,7 @@ import { Col } from "react-bootstrap";
 const NavbarButton = ({ name, onClick }) => {
 	return (
 		<Col>
-			<button onClick={onClick}>{name}</button>
+			<a className="navbar-button" href="#" onClick={onClick}>{name}</a>
 		</Col>
 	);
 };
