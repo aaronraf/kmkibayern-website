@@ -10,7 +10,7 @@ const NavbarLink = (props) => {
 				</a>
 			</div>
 		);
-	}
+	};
 
 	const putListItem = (link, text) => {
 		return (
@@ -20,7 +20,7 @@ const NavbarLink = (props) => {
 				</li>
 			</ul>
 		);
-	}
+	};
 
 	const readerContent = (imgSrc, imgAlt, link, text) => {
 		if (imgSrc) {
@@ -28,13 +28,15 @@ const NavbarLink = (props) => {
 		} else {
 			return putListItem(link, text);
 		}
-	}
+	};
 
 	return (
-		<Col>
-			{readerContent(props.imgSrc, props.imgAlt, props.link, props.text)}
-		</Col>
+		<div className="navbar-link">
+			<Col>
+				{readerContent(props.imgSrc, props.imgAlt, props.link, props.text)}
+			</Col>
+		</div>
 	);
-}
+};
 
 export default NavbarLink;
