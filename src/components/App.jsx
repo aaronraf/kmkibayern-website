@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Hero from "./Hero";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Home";
 import "./App.css";
-import Navbar from "./Navbar";
 
 const App = () => {
 	const [language, setLanguage] = useState("id");
@@ -11,10 +11,16 @@ const App = () => {
 	};
 
 	return (
-		<div>
-			<Navbar currentLang={language} onLangChange={handleLangChange} />
-			<Hero lang={language} />
-		</div>
+		<Router>
+			<div>
+				<Switch>
+					<Route path="/" exact>
+						<Home lang={language} handleLangChange={handleLangChange}/>
+					</Route>
+					<Route path="/about"></Route>
+				</Switch>
+			</div>
+		</Router>
 	);
 };
 

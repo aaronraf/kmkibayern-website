@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
+import React from "react";
 import { Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const NavbarLink = (props) => {
 	const putImage = (src, alt) => {
