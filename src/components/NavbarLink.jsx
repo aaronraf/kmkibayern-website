@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import Col from "react-bootstrap/Col";
+import { Col } from "react-bootstrap";
 
-function NavbarLink(props) {
-	function putImage(src, alt) {
+const NavbarLink = (props) => {
+	const putImage = (src, alt) => {
 		return (
 			<div className="logo-container">
 				<a href="#">
@@ -12,7 +12,7 @@ function NavbarLink(props) {
 		);
 	}
 
-	function putListItem(link, text) {
+	const putListItem = (link, text) => {
 		return (
 			<ul>
 				<li>
@@ -22,7 +22,7 @@ function NavbarLink(props) {
 		);
 	}
 
-	function readerContent(imgSrc, imgAlt, link, text) {
+	const readerContent = (imgSrc, imgAlt, link, text) => {
 		if (imgSrc) {
 			return putImage(imgSrc, imgAlt);
 		} else {
@@ -30,7 +30,11 @@ function NavbarLink(props) {
 		}
 	}
 
-	return <Col>{readerContent(props.imgSrc, props.imgAlt, props.link, props.text)}</Col>;
+	return (
+		<Col>
+			{readerContent(props.imgSrc, props.imgAlt, props.link, props.text)}
+		</Col>
+	);
 }
 
 export default NavbarLink;

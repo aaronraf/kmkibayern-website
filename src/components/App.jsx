@@ -1,27 +1,21 @@
-// import React from "react";
+import React, { useState } from "react";
 import Hero from "./Hero";
 import "./App.css";
 import Navbar from "./Navbar";
 
-const langEN = false;
-const langDE = false;
+const App = () => {
+	const [language, setLanguage] = useState("id");
 
-function setLanguage() {
-	if (langEN) {
-		return "en";
-	} else if (langDE) {
-		return "de";
-	}
-	return "id";
-}
+	const handleLangChange = (newLang) => {
+		setLanguage(newLang);
+	};
 
-function App() {
 	return (
 		<div>
-			<Navbar />
-			<Hero lang={setLanguage()} />
+			<Navbar currentLang={language} onLangChange={handleLangChange} />
+			<Hero lang={language} />
 		</div>
 	);
-}
+};
 
 export default App;
