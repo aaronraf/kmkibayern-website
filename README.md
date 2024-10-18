@@ -1,5 +1,5 @@
 # Notes untuk PK
-- Buat update list PK periode baru: clone repo & update databasePK.js, kasi notes yang jelas (nama, periode kerja) pas submit PR
+- Buat update list PK periode baru: clone repo & update databasePK.json, kasi notes yang jelas (nama, periode kerja) pas submit PR
 
 # React + Vite
 
