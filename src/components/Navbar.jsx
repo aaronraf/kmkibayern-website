@@ -5,35 +5,62 @@ import NavbarLink from "./NavbarLink";
 import NavbarButton from "./NavbarButton";
 
 const Navbar = ({ currentLang, onLangChange }) => {
-  return (
-    <header>
-      <nav>
-        <Container>
-          <div className="navbar">
-            {/* Left: Logo */}
-            <div className="navbar-left">
-              <NavbarLink link="#" imgSrc={logo} imgAlt="KMKI Bayern logo" />
-            </div>
+	return (
+		<header>
+			<nav>
+				<Container>
+					<div className="navbar">
+						{/* Left: Logo */}
+						<div className="navbar-left">
+							<NavbarLink link="#" imgSrc={logo} imgAlt="KMKI Bayern logo" />
+						</div>
 
-            {/* Center: Links */}
-            <div className="navbar-center">
-              <NavbarLink link="#" text="Home" />
-              <NavbarLink link="#" text="Upcoming Events" />
-              <NavbarLink link="#" text="Articles" />
-              <NavbarLink link="#" text="About Us" />
-            </div>
+						{/* Center: Links */}
+						<div className="navbar-center">
+							<NavbarLink link="#" text="Home" />
+							<NavbarLink
+								link="#"
+								text={
+									currentLang === "en"
+										? "Upcoming Events"
+										: currentLang === "de"
+										? "Kommende Veranstaltungen"
+										: "Acara Selanjutnya"
+								}
+							/>
+							{/* <NavbarLink
+								link="#"
+								text={
+									currentLang == "en"
+										? "Articles"
+										: currentLang == "de"
+										? "Artikeln"
+										: "Artikel"
+								}
+							/> */}
+							<NavbarLink
+								link="#"
+								text={
+									currentLang == "en"
+										? "About Us"
+										: currentLang == "de"
+										? "Über uns"
+										: "Tentang Kami"
+								}
+							/>
+						</div>
 
-            {/* Right: Buttons */}
-            <div className="navbar-right">
-              <NavbarButton name={"ID"} onClick={() => onLangChange("id")} />
-              <NavbarButton name={"EN"} onClick={() => onLangChange("en")} />
-              <NavbarButton name={"DE"} onClick={() => onLangChange("de")} />
-            </div>
-          </div>
-        </Container>
-      </nav>
-    </header>
-  );
+						{/* Right: Buttons */}
+						<div className="navbar-right">
+							<NavbarButton name={"ID"} onClick={() => onLangChange("id")} />
+							<NavbarButton name={"EN"} onClick={() => onLangChange("en")} />
+							<NavbarButton name={"DE"} onClick={() => onLangChange("de")} />
+						</div>
+					</div>
+				</Container>
+			</nav>
+		</header>
+	);
 };
 
 export default Navbar;
