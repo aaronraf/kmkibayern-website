@@ -45,6 +45,7 @@
 
 .navbar-link {
 	margin: 0 15px; /* Adds spacing between navbar links */
+	text-decoration: none;
 }
 
 .navbar-button {
@@ -69,10 +70,10 @@
 	object-fit: contain; /* Maintain aspect ratio without distortion */
 }
 
-ul {
+/* ul {
 	list-style: none;
 }
 
 ul li a {
 	text-decoration: none;
-}
+} */

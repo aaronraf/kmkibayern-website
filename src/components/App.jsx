@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import "./App.css";
 
@@ -11,14 +11,13 @@ const App = () => {
 	};
 
 	return (
-		<Router>
+		<Router basename="/kmkibayern-website">
 			<div>
-				<Switch>
-					<Route path="/" exact>
-						<Home lang={language} handleLangChange={handleLangChange}/>
-					</Route>
-					<Route path="/about"></Route>
-				</Switch>
+				<Routes>
+				<Route path="/" element={<Home lang={language} handleLangChange={handleLangChange} />} />
+{/* 				TODO: create Events and About elements
+				<Route path="/about" element={<About lang={language} />} /> */}
+				</Routes>
 			</div>
 		</Router>
 	);

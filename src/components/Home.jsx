@@ -6,7 +6,7 @@ const Home = ({ lang, handleLangChange }) => {
 	return (
 		<div>
 			<Navbar lang={lang} onLangChange={handleLangChange} />
-			<Hero lang={lang} />;
+			<Hero lang={lang} />
 		</div>
 	);
 };
