@@ -1,0 +1,43 @@
+[
+	{
+		"periode": "2024/2025",
+		"pengurus": [
+			{
+				"divisi": "ketua",
+				"anggota": ["Chelsee"]
+			},
+			{
+				"divisi": "wakil ketua",
+				"anggota": ["Beka"]
+			},
+			{
+				"divisi": "sekretaris",
+				"anggota": ["Nastasya"]
+			},
+			{
+				"divisi": "bendahara",
+				"anggota": ["Felix"]
+			},
+			{
+				"divisi": "liturgi",
+				"anggota": ["Owen", "Kelvin"]
+			},
+			{
+				"divisi": "acara",
+				"anggota": ["Nathan", "Deo"]
+			},
+			{
+				"divisi": "publikasi",
+				"anggota": ["Aaron", "Gabi"]
+			},
+			{
+				"divisi": "konsumsi",
+				"anggota": ["Marcel", "Kevin"]
+			},
+			{
+				"divisi": "usem",
+				"anggota": ["Raymondus"]
+			}
+		]
+	}
+]
