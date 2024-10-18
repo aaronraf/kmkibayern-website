@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import logo from "../assets/kmkibayern-logo-whitebg.png";
 
 const Hero = ({ lang }) => {
 	const displayLanguage = (languageSetting) => {
