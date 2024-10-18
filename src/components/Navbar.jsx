@@ -1,28 +1,31 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/kmkibayern-logo-whitebg.png";
 import NavbarLink from "./NavbarLink";
+import NavbarButton from "./NavbarButton";
 
-function Navbar() {
+const Navbar = ({ currentLang, onLangChange }) => {
 	return (
 		<header>
 			<nav>
 				<Container>
 					<Row className="justify-content-center align-items-center">
-                        <NavbarLink link="#" imgSrc={logo} imgAlt="KMKI Bayern logo"/>
-                        <NavbarLink link="#" text="Home"/>
-                        <NavbarLink link="#" text="Upcoming Events"/>
-                        <NavbarLink link="#" text="Articles"/>
-                        <NavbarLink link="#" text="About Us"/>
+						<NavbarLink link="#" imgSrc={logo} imgAlt="KMKI Bayern logo" />
+						<NavbarLink link="#" text="Home" />
+						<NavbarLink link="#" text="Upcoming Events" />
+						<NavbarLink link="#" text="Articles" />
+						<NavbarLink link="#" text="About Us" />
+						<NavbarButton name={"ID"} onClick={() => onLangChange("id")} />
+						<NavbarButton name={"EN"} onClick={() => onLangChange("en")} />
+						<NavbarButton name={"DE"} onClick={() => onLangChange("de")} />
 					</Row>
 				</Container>
 			</nav>
 		</header>
 	);
-}
+};
 
 export default Navbar;
-
 
 // contoh website ppim
 
@@ -278,4 +281,3 @@ export default Navbar;
 // 		</div>
 // 	);
 // }
-
