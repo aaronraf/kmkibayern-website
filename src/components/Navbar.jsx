@@ -4,7 +4,7 @@ import logo from "../assets/kmkibayern-logo-whitebg.png";
 import NavbarLink from "./NavbarLink";
 import NavbarButton from "./NavbarButton";
 
-const Navbar = ({ currentLang, onLangChange }) => {
+const Navbar = ({ lang, onLangChange }) => {
 	return (
 		<header>
 			<nav>
@@ -21,9 +21,9 @@ const Navbar = ({ currentLang, onLangChange }) => {
 							<NavbarLink
 								link="#"
 								text={
-									currentLang === "en"
+									lang === "en"
 										? "Upcoming Events"
-										: currentLang === "de"
+										: lang === "de"
 										? "Kommende Veranstaltungen"
 										: "Acara Selanjutnya"
 								}
@@ -31,9 +31,9 @@ const Navbar = ({ currentLang, onLangChange }) => {
 							{/* <NavbarLink
 								link="#"
 								text={
-									currentLang == "en"
+									lang == "en"
 										? "Articles"
-										: currentLang == "de"
+										: lang == "de"
 										? "Artikeln"
 										: "Artikel"
 								}
@@ -41,9 +41,9 @@ const Navbar = ({ currentLang, onLangChange }) => {
 							<NavbarLink
 								link="#"
 								text={
-									currentLang == "en"
+									lang == "en"
 										? "About Us"
-										: currentLang == "de"
+										: lang == "de"
 										? "Über uns"
 										: "Tentang Kami"
 								}
