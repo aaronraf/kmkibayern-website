@@ -3,9 +3,9 @@ import { Col } from "react-bootstrap";
 
 const NavbarButton = ({ name, onClick, isActive }) => {
 	return (
-		<Col className="navbar-button">
+		<Col>
 			<a
-				// className="navbar-button"
+				className="navbar-button"
 				id={isActive && "active"}
 				href="#"
 				onClick={onClick}>
