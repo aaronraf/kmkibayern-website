@@ -30,6 +30,9 @@
 }
 
 .navbar {
+	/* position: sticky !important;
+	top: 0;
+	z-index: 1000; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -76,7 +79,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100px;
+	width: 6rem;
 	height: auto;
 	overflow: hidden; /* Hide overflow if image doesn't perfectly fit */
 }
@@ -85,4 +88,12 @@
 	max-width: 100%;
 	max-height: 100%;
 	object-fit: contain; /* Maintain aspect ratio without distortion */
+}
+
+.footer {
+	padding: 1rem;
+}
+
+.footer-links {
+	padding: 1rem 0 7rem 0;
 }
