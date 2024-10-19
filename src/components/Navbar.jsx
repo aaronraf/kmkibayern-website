@@ -1,10 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Container, Col } from "react-bootstrap";
 import logo from "../assets/kmkibayern-logo-whitebg.png";
 import NavbarButton from "./NavbarButton";
 
-const Navbar = ({ lang, onLangChange }) => {
+const Navbar = () => {
+	const { t, i18n } = useTranslation();
+
+	const changeLanguage = (lang) => {
+		i18n.changeLanguage(lang);
+	};
+
 	return (
 		<header>
 			<nav>
@@ -31,26 +38,18 @@ const Navbar = ({ lang, onLangChange }) => {
 								Home
 							</Link>
 							<Link to="/events" className="navbar-link">
-								{lang === "en"
-									? "Upcoming Events"
-									: lang === "de"
-									? "Kommende Veranstaltungen"
-									: "Acara Selanjutnya"}
+								{t("upcoming-events")}
 							</Link>
 							<Link to="/about" className="navbar-link">
-								{lang === "en"
-									? "About Us"
-									: lang === "de"
-									? "Über uns"
-									: "Tentang Kami"}
+								{t("about")}
 							</Link>
 						</div>
 
 						{/* Right: Language Buttons */}
 						<div className="navbar-right">
-							<NavbarButton name={"ID"} onClick={() => onLangChange("id")} />
-							<NavbarButton name={"EN"} onClick={() => onLangChange("en")} />
-							<NavbarButton name={"DE"} onClick={() => onLangChange("de")} />
+							<NavbarButton name={"ID"} onClick={() => changeLanguage("id")} />
+							<NavbarButton name={"EN"} onClick={() => changeLanguage("en")} />
+							<NavbarButton name={"DE"} onClick={() => changeLanguage("de")} />
 						</div>
 					</div>
 				</Container>

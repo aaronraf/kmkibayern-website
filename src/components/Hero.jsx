@@ -1,24 +1,13 @@
-/* eslint-disable react/prop-types */
 import React from "react";
+import { useTranslation } from "react-i18next";
 
-const Hero = ({ lang }) => {
-	const displayLanguage = (languageSetting) => {
-		switch (languageSetting) {
-			case "en":
-				return "Indonesian Catholic Student Family in Bavaria";
-
-			case "de":
-				return "Indonesischer Katolischer Studentengemeinde in Bayern";
-
-			default:
-				return "Keluarga Mahasiswa Katolik Indonesia di Bayern";
-		}
-	};
+const Hero = () => {
+	const { t } = useTranslation();
 
 	return (
 		<div className="hero">
 			<h1>KMKI Bayern</h1>
-			<p>{displayLanguage(lang)}</p>
+			<p>{t("hero-desc")}</p>
 		</div>
 	);
 };
