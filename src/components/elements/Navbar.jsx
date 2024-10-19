@@ -19,17 +19,19 @@ const Navbar = ({ activeLink }) => {
 					<div className="navbar">
 						{/* Left: Logo */}
 						<div className="navbar-left">
-							<Col>
-								<div className="logo-container">
-									<a href="#">
-										<img
-											className="logo-image"
-											src={logo}
-											alt="KMKI Bayern logo"
-										/>
-									</a>
-								</div>
-							</Col>
+							<Link to="/">
+								<Col>
+									<div className="logo-container">
+										<a href="#">
+											<img
+												className="logo-image"
+												src={logo}
+												alt="KMKI Bayern logo"
+											/>
+										</a>
+									</div>
+								</Col>
+							</Link>
 						</div>
 
 						{/* Center: Links */}
