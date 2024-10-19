@@ -5,10 +5,11 @@ const Hero = () => {
 	const { t } = useTranslation();
 
 	return (
-		<div className="hero">
+		<section className="hero">
 			<h1>KMKI Bayern</h1>
 			<p>{t("hero-desc")}</p>
-		</div>
+			<div className="hero-img"></div>
+		</section>
 	);
 };
 

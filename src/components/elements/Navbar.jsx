@@ -2,10 +2,10 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Container, Col } from "react-bootstrap";
-import logo from "../assets/kmkibayern-logo-whitebg.png";
+import logo from "../../assets/kmki-logo-biru.png";
 import NavbarButton from "./NavbarButton";
 
-const Navbar = () => {
+const Navbar = ({ activeLink }) => {
 	const { t, i18n } = useTranslation();
 
 	const changeLanguage = (lang) => {
@@ -34,22 +34,43 @@ const Navbar = () => {
 
 						{/* Center: Links */}
 						<div className="navbar-center">
-							<Link to="/" className="navbar-link">
+							<Link
+								to="/"
+								className="navbar-link"
+								id={activeLink === "home" && "active"}>
 								Home
 							</Link>
-							<Link to="/events" className="navbar-link">
+							<Link
+								to="/events"
+								className="navbar-link"
+								id={activeLink === "events" && "active"}>
 								{t("upcoming-events")}
 							</Link>
-							<Link to="/about" className="navbar-link">
+							<Link
+								to="/about"
+								className="navbar-link"
+								id={activeLink === "about" && "active"}>
 								{t("about")}
 							</Link>
 						</div>
 
 						{/* Right: Language Buttons */}
 						<div className="navbar-right">
-							<NavbarButton name={"ID"} onClick={() => changeLanguage("id")} />
-							<NavbarButton name={"EN"} onClick={() => changeLanguage("en")} />
-							<NavbarButton name={"DE"} onClick={() => changeLanguage("de")} />
+							<NavbarButton
+								name={"ID"}
+								onClick={() => changeLanguage("id")}
+								isActive={i18n.language === "id"}
+							/>
+							<NavbarButton
+								name={"EN"}
+								onClick={() => changeLanguage("en")}
+								isActive={i18n.language === "en"}
+							/>
+							<NavbarButton
+								name={"DE"}
+								onClick={() => changeLanguage("de")}
+								isActive={i18n.language === "de"}
+							/>
 						</div>
 					</div>
 				</Container>
