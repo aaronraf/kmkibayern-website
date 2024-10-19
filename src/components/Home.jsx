@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Hero from "./Hero";
+import Navbar from "./elements/Navbar";
+import Hero from "./elements/Hero";
 
 const Home = () => {
 	return (
 		<div>
-			<Navbar />
+			<Navbar activeLink="home" />
 			<Hero />
 		</div>
 	);

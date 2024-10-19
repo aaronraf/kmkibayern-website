@@ -5,17 +5,27 @@
 	margin: 0;
 	padding: 2rem;
 	text-align: center;
+	color: #009cdb;
 }
 
 .header {
 	display: flex;
+	height: 15vh;
 }
 
 .hero {
+	height: 85vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+}
+
+.hero-img {
+	position: absolute;
+	top: 300px;
+	width: 720px;
+	height: 480px;
+	background-color: grey;
 }
 
 .navbar {
@@ -41,18 +51,22 @@
 	display: flex;
 	justify-content: center;
 	flex-grow: 1; /* Center section grows to fill the space */
+	gap: 3rem; /* Space between each link */
+	padding: 10px; /* Optional padding to add space around the entire navbar */
 }
 
 .navbar-link {
 	margin: 0 15px; /* Adds spacing between navbar links */
+	color: #009cdb;
 	text-decoration: none;
 }
 
 .navbar-button {
 	margin-left: 10px; /* Adds spacing between buttons */
-	background-color: white;
-	color: blue;
-	text-decoration: none;
+}
+
+#active {
+	font-weight: bold;
 }
 
 .logo-container {
@@ -69,11 +83,3 @@
 	max-height: 100%;
 	object-fit: contain; /* Maintain aspect ratio without distortion */
 }
-
-/* ul {
-	list-style: none;
-}
-
-ul li a {
-	text-decoration: none;
-} */
