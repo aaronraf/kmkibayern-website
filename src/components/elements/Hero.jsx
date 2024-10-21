@@ -7,7 +7,7 @@ const Hero = () => {
 	return (
 		<section className="hero">
 			<h1>KMKI Bayern</h1>
-			<p>{t("hero-desc")}</p>
+			<p>{t("kmki-desc")}</p>
 			<div className="hero-img"></div>
 		</section>
 	);

@@ -11,7 +11,7 @@ const Footer = () => {
 	return (
 		<section className="footer">
 			<p>
-				Copyright © {date}. {t("hero-desc")}.
+				Copyright © {date}. {t("kmki-desc")}.
 			</p>
 			<div className="footer-links">
 				<Container fluid>
