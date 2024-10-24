@@ -1,7 +1,7 @@
 import React from "react";
+import { Accordion } from "react-bootstrap";
 import Navbar from "./elements/Navbar";
 import Footer from "./elements/Footer";
-import { Accordion } from "react-bootstrap";
 
 const Events = () => {
 	return (
