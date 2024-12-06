@@ -19,10 +19,14 @@ const Footer = () => {
 						size="large"
 						color="primary"
 						href="https://www.instagram.com/kmkibayern/"
-						className="me-4">
+						className="footer-fab me-4">
 						<InstagramIcon />
 					</Fab>
-					<Fab size="large" color="primary" href="https://linktr.ee/kmkibayern">
+					<Fab
+						size="large"
+						color="primary"
+						href="https://linktr.ee/kmkibayern"
+						className="footer-fab">
 						<LinkIcon />
 					</Fab>
 				</Container>
