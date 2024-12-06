@@ -9,7 +9,7 @@ const Home = () => {
 		<div>
 			<Navbar activeLink="home" />
 			<Hero />
-			<Section title={"past-events"} alignment={"center"} background={"--color-secondary"}/>
+			<Section title={"past-events"} alignment={"center"}/>
 			<Footer />
 		</div>
 	);
