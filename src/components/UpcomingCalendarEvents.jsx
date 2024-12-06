@@ -3,7 +3,6 @@ import { gapi } from "gapi-script";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 const CALENDAR_ID = "ek9cbqb5rclm4hsn74t1kpibgg@group.calendar.google.com";
-// const SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
 
 const UpcomingCalendarEvents = () => {
 	const [events, setEvents] = useState([]);
