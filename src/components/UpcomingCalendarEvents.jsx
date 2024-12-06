@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { gapi } from "gapi-script";
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY;
 const CALENDAR_ID = "ek9cbqb5rclm4hsn74t1kpibgg@group.calendar.google.com";
 
 const UpcomingCalendarEvents = () => {
@@ -35,7 +35,7 @@ const UpcomingCalendarEvents = () => {
 					timeMin: new Date().toISOString(), // Fetch events starting from today
 					showDeleted: false,
 					singleEvents: true,
-					maxResults: 5,
+					maxResults: 6,
 					orderBy: "startTime",
 				});
 				console.log("API Response:", response);
@@ -81,7 +81,10 @@ const UpcomingCalendarEvents = () => {
 									event.end.dateTime || event.end.date
 								).toLocaleString()}
 							</p>
-							<p>{event.description || "No description provided."}</p>
+							<p>
+								<strong>Location:</strong>{" "}
+								{event.location || "No location provided."}
+							</p>
 						</div>
 					))
 				) : (
