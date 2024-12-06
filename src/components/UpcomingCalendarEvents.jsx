@@ -37,6 +37,7 @@ const UpcomingCalendarEvents = () => {
 					singleEvents: true,
 					maxResults: 6,
 					orderBy: "startTime",
+					key: API_KEY,
 				});
 				console.log("API Response:", response);
 				const events = response.result.items;

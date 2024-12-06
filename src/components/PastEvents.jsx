@@ -41,6 +41,7 @@ const PastEvents = () => {
 					singleEvents: true,
 					maxResults: 30,
 					orderBy: "startTime",
+					key: API_KEY,
 				});
 				console.log("Past events response:", response);
 				const events = response.result.items;
