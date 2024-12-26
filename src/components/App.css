@@ -7,11 +7,6 @@
 	text-align: center;
 }
 
-.header {
-	display: flex;
-	height: 15vh;
-}
-
 .hero {
 	margin: 2rem 0;
 	height: 85vh;
@@ -104,18 +99,22 @@
 }
 
 .footer-links {
-	padding: 1rem 0 7rem 0;
+	padding: 1rem 0 5rem 0;
 }
 
 .footer-fab	 {
 	position: fixed;
 }
 
-.heading-pk {
+.content {
 	text-align: center;
 	margin-top: 2rem;
 	padding: 2rem;
 	width: 100%;
+}
+
+.header {
+	margin: 0 0 3rem 0;
 }
   
 .pk-img {
@@ -139,6 +138,7 @@
 
 .events-container {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 	gap: 16px;
 }

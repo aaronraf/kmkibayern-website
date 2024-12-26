@@ -10,8 +10,8 @@ const About = () => {
 	return (
 		<div>
 			<Navbar activeLink="about" />
-			<div className="heading-pk">
-				<h1>{t("about")}</h1>
+			<div className="content">
+				<h1 className="header">{t("about")}</h1>
 				<div className="pk-img">
 					<img src={fotoPK} alt="Panitia Kerja 2024/2025" />
 					<p>Panitia Kerja KMKI Bayern Periode 2024/2025</p>

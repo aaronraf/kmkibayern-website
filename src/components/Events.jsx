@@ -11,8 +11,8 @@ const Events = () => {
 	return (
 		<div>
 			<Navbar activeLink="events" />
-			<div className="">
-				<h1>{t("upcoming-events")}</h1>
+			<div className="content">
+				<h1 className="header">{t("upcoming-events")}</h1>
 				<CalendarEvents />
 			</div>
 			<Footer />
