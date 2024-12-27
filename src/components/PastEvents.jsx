@@ -26,20 +26,20 @@ const PastEvents = () => {
 		const loadPastEvents = async () => {
 			try {
 				const currentDate = new Date();
-				const threeMonthsAgo = new Date();
-				threeMonthsAgo.setMonth(currentDate.getMonth() - 3);
+				const oneMonthAgo = new Date();
+				oneMonthAgo.setMonth(currentDate.getMonth() - 1);
 
 				// Format dates to ISO string
 				const timeMax = currentDate.toISOString();
-				const timeMin = threeMonthsAgo.toISOString();
+				const timeMin = oneMonthAgo.toISOString();
 
 				const response = await gapi.client.calendar.events.list({
 					calendarId: CALENDAR_ID,
 					timeMax, // Fetch events up to today
-					timeMin, // Fetch events from the past 6 months
+					timeMin, // Fetch events from the past month
 					showDeleted: false,
 					singleEvents: true,
-					maxResults: 30,
+					maxResults: 4,
 					orderBy: "startTime",
 					key: API_KEY,
 				});

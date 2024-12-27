@@ -35,7 +35,7 @@ const UpcomingCalendarEvents = () => {
 					timeMin: new Date().toISOString(), // Fetch events starting from today
 					showDeleted: false,
 					singleEvents: true,
-					maxResults: 6,
+					maxResults: 16,
 					orderBy: "startTime",
 					key: API_KEY,
 				});
