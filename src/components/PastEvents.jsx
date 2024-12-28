@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { gapi } from "gapi-script";
+import EventCard from "./elements/EventCard";
 
-const API_KEY = import.meta.env.VITE_API_KEY;
+const API_KEY = import.meta.env.VITE_CALENDAR_API_KEY;
 const CALENDAR_ID = "ek9cbqb5rclm4hsn74t1kpibgg@group.calendar.google.com";
 
 const PastEvents = () => {
@@ -39,7 +40,7 @@ const PastEvents = () => {
 					timeMin, // Fetch events from the past month
 					showDeleted: false,
 					singleEvents: true,
-					maxResults: 4,
+					maxResults: 8,
 					orderBy: "startTime",
 					key: API_KEY,
 				});
@@ -60,30 +61,10 @@ const PastEvents = () => {
 	return (
 		<div>
 			<div className="events-container">
-				{events.length > 0 ? (
-					events.map((event) => (
-						<div key={event.id} className="event-card">
-							<h3>{event.summary}</h3>
-							<p>
-								<strong>Start:</strong>{" "}
-								{new Date(
-									event.start.dateTime || event.start.date
-								).toLocaleString()}
-							</p>
-							<p>
-								<strong>End:</strong>{" "}
-								{new Date(
-									event.end.dateTime || event.end.date
-								).toLocaleString()}
-							</p>
-							<p>
-								<strong>Location:</strong>{" "}
-								{event.location || "No location provided."}
-							</p>
-						</div>
-					))
+			{events.length > 0 ? (
+					events.map((event) => <EventCard key={event.id} event={event} />)
 				) : (
-					<p>No past events found.</p>
+					<p>No upcoming events.</p>
 				)}
 			</div>
 		</div>
