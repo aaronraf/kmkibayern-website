@@ -57,7 +57,7 @@ const Navbar = ({ activeLink }) => {
 						</div>
 
 						{/* Right: Language Buttons */}
-						<div className="navbar-right">
+						{/* <div className="navbar-right">
 							<NavbarButton
 								name={"ID"}
 								onClick={() => changeLanguage("id")}
@@ -73,7 +73,7 @@ const Navbar = ({ activeLink }) => {
 								onClick={() => changeLanguage("de")}
 								isActive={i18n.language === "de"}
 							/>
-						</div>
+						</div> */}
 					</div>
 				</Container>
 			</nav>

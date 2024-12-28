@@ -8,7 +8,7 @@
 }
 
 .hero {
-	margin: 2rem 0;
+	margin: 3rem 0;
 	height: 85vh;
 	width: 100%;
 	display: flex;
@@ -114,7 +114,11 @@
 }
 
 .header {
-	margin: 0 0 3rem 0;
+	margin: 1rem 0 3rem 0;
+}
+
+.secondary-header {
+	margin: 1rem 0 2rem 0;
 }
   
 .pk-img {
@@ -144,15 +148,15 @@
 }
   
 .event-card {
-	border: 1px solid #ddd;
+	border: 2px solid #ddd;
 	border-radius: 8px;
-	padding: 16px;
-	width: 300px;
+	padding: 1rem;
+	width: 20rem;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
   
 .event-card h3 {
-	margin: 0;
+	margin: 0 0 1.5rem 0;
 	font-size: 1.2rem;
 }
   

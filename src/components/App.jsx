@@ -9,7 +9,7 @@ import i18n from "../i18n";
 
 const App = () => {
 	return (
-		<Router basename="/kmkibayern-website">
+		<Router>
 			<div>
 				<Routes>
 					<Route path="/" element={<Home />} />

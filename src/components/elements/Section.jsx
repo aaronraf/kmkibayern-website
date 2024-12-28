@@ -10,7 +10,7 @@ const Section = ({ title, alignment, background }) => {
 
 	return (
 		<section style={alignmentStyle}>
-			<h2>{t(title)}</h2>
+			<h2 className="secondary-header">{t(title)}</h2>
 			<div></div>
 		</section>
 	);
