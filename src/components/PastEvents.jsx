@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { gapi } from "gapi-script";
 import EventCard from "./elements/EventCard";
 
-const API_KEY = import.meta.env.VITE_CALENDAR_API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY;
 const CALENDAR_ID = "ek9cbqb5rclm4hsn74t1kpibgg@group.calendar.google.com";
 
 const PastEvents = () => {
