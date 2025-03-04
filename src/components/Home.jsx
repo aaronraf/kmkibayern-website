@@ -4,7 +4,7 @@ import Navbar from "./elements/Navbar";
 import Hero from "./elements/Hero";
 import Section from "./elements/Section";
 import Footer from "./elements/Footer";
-import PastEvents from "./PastEvents";
+import EventCalendar from "./elements/EventCalendar";
 
 const Home = () => {
 	return (
@@ -13,7 +13,7 @@ const Home = () => {
 			<Hero />
 			<div className="content">
 				<Section title={"past-events"} alignment={"center"} />
-				<PastEvents />
+				<EventCalendar type="past" />
 			</div>
 			<div className="content">
 				<Section title={"kolekte"} alignment={"center"} />
@@ -31,6 +31,10 @@ const Home = () => {
 						</Col>
 					</Row>
 				</Container>
+			</div>
+			<div className="sensus">
+				<Section title={"sensus"} />
+				<h5>Kamu anggota akitf KMKI Bayern? Jangan lupa pastikan kamu sudah isi Sensus ya!</h5>
 			</div>
 			<Footer />
 		</div>
