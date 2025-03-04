@@ -5,6 +5,8 @@ import Hero from "./elements/Hero";
 import Section from "./elements/Section";
 import Footer from "./elements/Footer";
 import EventCalendar from "./elements/EventCalendar";
+import { Button } from "@mui/material";
+import AssignmentIcon from "@mui/icons-material/Assignment";
 
 const Home = () => {
 	return (
@@ -34,7 +36,18 @@ const Home = () => {
 			</div>
 			<div className="sensus">
 				<Section title={"sensus"} />
-				<h5>Kamu anggota akitf KMKI Bayern? Jangan lupa pastikan kamu sudah isi Sensus ya!</h5>
+				<h5>
+					Kamu anggota akitf KMKI Bayern? Pastikan kamu sudah isi Sensus ya!
+				</h5>
+				<br />
+				<Button
+					variant="contained"
+					startIcon={<AssignmentIcon />}
+					size="large"
+					target="_blank"
+					href="https://docs.google.com/forms/d/e/1FAIpQLSf-zqHk3eSzOWHRsV8REJIfGVhK4JBoD8-yRFwPXq03-iER2Q/viewform">
+					Klik di sini untuk isi sensus
+				</Button>
 			</div>
 			<Footer />
 		</div>

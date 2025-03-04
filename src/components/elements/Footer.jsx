@@ -18,6 +18,7 @@ const Footer = () => {
 					<Fab
 						size="large"
 						color="primary"
+						target="_blank"
 						href="https://www.instagram.com/kmkibayern/"
 						className="footer-fab me-4">
 						<InstagramIcon />
@@ -25,6 +26,7 @@ const Footer = () => {
 					<Fab
 						size="large"
 						color="primary"
+						target="_blank"
 						href="https://linktr.ee/kmkibayern"
 						className="footer-fab">
 						<LinkIcon />
