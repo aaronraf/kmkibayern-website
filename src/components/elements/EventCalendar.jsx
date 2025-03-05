@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import EventCard from "./EventCard";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
@@ -44,7 +45,7 @@ const EventCalendar = ({ type = "future", limit = 8 }) => {
 				setLoading(false);
 			}
 		};
-		
+
 		fetchEvents();
 	}, [type, limit]);
 
@@ -61,6 +62,11 @@ const EventCalendar = ({ type = "future", limit = 8 }) => {
 			</div>
 		</div>
 	);
+};
+
+EventCalendar.propTypes = {
+	type: PropTypes.oneOf(["past", "future"]),
+	limit: PropTypes.number,
 };
 
 export default EventCalendar;

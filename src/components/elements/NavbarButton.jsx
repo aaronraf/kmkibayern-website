@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Col } from "react-bootstrap";
 
 const NavbarButton = ({ name, onClick, isActive }) => {
@@ -13,6 +14,12 @@ const NavbarButton = ({ name, onClick, isActive }) => {
 			</a>
 		</Col>
 	);
+};
+
+NavbarButton.propTypes = {
+	name: PropTypes.string.isRequired,
+	onClick: PropTypes.func.isRequired,
+	isActive: PropTypes.bool,
 };
 
 export default NavbarButton;

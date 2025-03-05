@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
 const Section = ({ title, alignment, background }) => {
 	const { t } = useTranslation();
 	const alignmentStyle = {
 		textAlign: alignment,
-        backgroundColor: `var(${background})`, 
+		backgroundColor: `var(${background})`,
 	};
 
 	return (
@@ -14,6 +15,12 @@ const Section = ({ title, alignment, background }) => {
 			<div></div>
 		</section>
 	);
+};
+
+Section.propTypes = {
+	title: PropTypes.string.isRequired,
+	alignment: PropTypes.string,
+	background: PropTypes.string,
 };
 
 export default Section;

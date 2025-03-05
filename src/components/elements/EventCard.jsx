@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
 const EventCard = ({ event }) => {
 	// const [coordinates, setCoordinates] = useState(null);
@@ -57,6 +58,22 @@ const EventCard = ({ event }) => {
 			<p>{event.description || "No description provided."}</p>
 		</div>
 	);
+};
+
+EventCard.propTypes = {
+	event: PropTypes.shape({
+		summary: PropTypes.string.isRequired,
+		location: PropTypes.string.isRequired,
+		start: PropTypes.shape({
+			dateTime: PropTypes.dateTime,
+			date: PropTypes.date,
+		}),
+		end: PropTypes.shape({
+			dateTime: PropTypes.dateTime,
+			date: PropTypes.date,
+		}),
+		description: PropTypes.string.isRequired,
+	}).isRequired,
 };
 
 export default EventCard;
