@@ -30,6 +30,11 @@ body {
 	place-items: center;
 }
 
+body.no-scroll {
+	overflow: hidden;
+	height: 100%;
+}
+
 a {
 	font-weight: 500;
 	text-decoration: none;

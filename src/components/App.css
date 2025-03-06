@@ -133,6 +133,7 @@
 
 .footer-fab {
 	position: fixed;
+	z-index: 0;
 }
 
 .content {
@@ -239,7 +240,7 @@
 	}
 
 	.navbar {
-		flex-direction: column; /* Stack navbar vertically */
+		flex-direction: row; /* Change direction to horizontal */
 		align-items: center; /* Center-align items */
 		gap: 1rem; /* Add gap between navbar items */
 	}

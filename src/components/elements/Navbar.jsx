@@ -23,7 +23,13 @@ const Navbar = ({ activeLink }) => {
 	};
 
 	React.useEffect(() => {
-		document.body.style.overflow = menuOpen ? "hidden" : "auto";
+		if (menuOpen) {
+			document.body.classList.add("no-scroll");
+		} else {
+			document.body.classList.remove("no-scroll");
+		}
+
+		return () => document.body.classList.remove("no-scroll");
 	}, [menuOpen]);
 
 	return (
