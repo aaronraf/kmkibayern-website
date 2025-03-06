@@ -33,6 +33,10 @@ const EventCard = ({ event }) => {
 	// 	return `${baseUrl}/pin-l-marker+285A98(${coordinates[0]},${coordinates[1]})/auto/600x300?access_token=${apiKey}`;
 	// };
 
+	const parseDescription = (description) => {
+		return !description ? "No description provided" : description.replace(/\n/g, "<br>");
+	};
+
 	return (
 		<div className="event-card">
 			<h3>{event.summary}</h3>
@@ -55,7 +59,7 @@ const EventCard = ({ event }) => {
 				<strong>Lokasi:</strong> {event.location || "No location provided."}
 			</p>
 			<br />
-			<p>{event.description || "No description provided."}</p>
+			<p dangerouslySetInnerHTML={{ __html: parseDescription(event.description) }} />
 		</div>
 	);
 };
@@ -74,6 +78,7 @@ EventCard.propTypes = {
 		}),
 		description: PropTypes.string.isRequired,
 	}).isRequired,
+	description: PropTypes.string,
 };
 
 export default EventCard;

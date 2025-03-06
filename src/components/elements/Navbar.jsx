@@ -1,17 +1,30 @@
 import React from "react";
 import PropTypes from "prop-types";
 import logo from "../../assets/kmki-logo-biru.png";
-// import NavbarButton from "./NavbarButton";
+import NavbarButton from "./NavbarButton";
 import { Link } from "react-router-dom";
 import { Container, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const Navbar = ({ activeLink }) => {
 	const { t, i18n } = useTranslation();
+	const [menuOpen, setMenuOpen] = React.useState(false);
 
 	const changeLanguage = (lang) => {
 		i18n.changeLanguage(lang);
 	};
+
+	const menuHandler = () => {
+		setMenuOpen(!menuOpen);
+	};
+
+	const linkHandler = () => {
+		setMenuOpen(false);
+	};
+
+	React.useEffect(() => {
+		document.body.style.overflow = menuOpen ? "hidden" : "auto";
+	}, [menuOpen]);
 
 	return (
 		<header>
@@ -20,7 +33,7 @@ const Navbar = ({ activeLink }) => {
 					<div className="navbar">
 						{/* Left: Logo */}
 						<div className="navbar-left">
-							<Link to="/">
+							<Link to="/" onClick={linkHandler}>
 								<Col>
 									<div className="logo-container">
 										<a href="#">
@@ -36,28 +49,31 @@ const Navbar = ({ activeLink }) => {
 						</div>
 
 						{/* Center: Links */}
-						<div className="navbar-center">
+						<div className={`navbar-center ${menuOpen ? "show" : ""}`}>
 							<Link
 								to="/"
 								className="navbar-link"
-								id={activeLink === "home" && "active"}>
+								id={activeLink === "home" && "active"}
+								onClick={linkHandler}>
 								Home
 							</Link>
 							<Link
 								to="/events"
 								className="navbar-link"
-								id={activeLink === "events" && "active"}>
+								id={activeLink === "events" && "active"}
+								onClick={linkHandler}>
 								{t("upcoming-events")}
 							</Link>
 							<Link
 								to="/about"
 								className="navbar-link"
-								id={activeLink === "about" && "active"}>
+								id={activeLink === "about" && "active"}
+								onClick={linkHandler}>
 								{t("about")}
 							</Link>
 						</div>
 
-						{/* Right: Language Buttons */}
+						{/* Right: Language Buttons or Hamburger Menu */}
 						{/* <div className="navbar-right">
 							<NavbarButton
 								name={"ID"}
@@ -75,6 +91,14 @@ const Navbar = ({ activeLink }) => {
 								isActive={i18n.language === "de"}
 							/>
 						</div> */}
+						<div className="hamburger" onClick={menuHandler}>
+							<div className={`bar ${menuOpen ? "active" : ""}`}></div>
+							<div className={`bar ${menuOpen ? "active" : ""}`}></div>
+							<div className={`bar ${menuOpen ? "active" : ""}`}></div>
+						</div>
+
+						{/* Hamburger Overlay */}
+						{menuOpen && <div className="overlay" onClick={linkHandler}></div>}
 					</div>
 				</Container>
 			</nav>

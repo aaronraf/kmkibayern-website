@@ -4,6 +4,7 @@
 	--text-primary: #009cdb;
 	--link-hover: #84c3dc;
 	--color-secondary: #ffffff;
+	--overlay-color: #303d57;
 
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -15,7 +16,11 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-html,
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
 body {
 	background-color: var(--color-primary) !important;
 	color: var(--text-primary) !important;
