@@ -3,40 +3,71 @@
 		"periode": "2024/2025",
 		"pengurus": [
 			{
-				"divisi": "ketua",
-				"anggota": ["Chelsee"]
+				"nama": "chelsee",
+				"nama_lengkap": "Aurellia Chelsee",
+				"divisi": "Koordinator",
+				"profile": "Perkenalkan Koordinator KMKI Bayern terbaru kita untuk periode 2024/2025 ini - Aurellia Chelsee atau biasa dipanggil Chelsee 🤩 Chelsee sekarang sedang kuliah master semester 1 di TUM jurusan Chemie loh, karena katanya happy place dia selain pantai dan lautan 🌊 adalah di dalam Labor🧪 Selain itu, kalau ada waktu senggang, Chelsee biasanya seneng nonton film berjam-jam sampai sakit kepala, baca novel-novel yang bikin halu, backen dessert-dessert beragam untuk kita semua, atau kalau lagi winter ice-skating atau main salju ❄️ Funfact: kalau main ke kamarnya Chelsee, berasanya kaya ke Kindergarten karna pink semua dan ada kurang lebih 50 boneka dimana mana 👀 Selamat melayani Chelsee, semoga Tuhan selalu bersertamu! 🥳"
 			},
 			{
-				"divisi": "wakil ketua",
-				"anggota": ["Brian"]
+				"nama": "brian",
+				"nama_lengkap": "Brian Kristandra",
+				"divisi": "Wakil Koordinator",
+				"profile": "Siapa sih yang gak kenal sama Wakil Koordinator kita, Brian Kristandra atau biasa dikenal dengan Beka (request mulai sekarang dipanggil Brian aja gais) 😎 Brian sekarang sedang kuliah master semester 2 di TUM jurusan Mechatronics, Robotics and Biomechanical Engineering 🤯 Karena Brian selalu mau hidup yang balanced dalam segala hal, hobby dia pun juga seimbang banget dengan dua hal yang paling dia sukain yaitu futsal ⚽ dan Red Velvet (girlband K-Pop bukan kue) 󰠘 Walaupun kelakuannya asik banget dan sering bercandaan, Brian sebenernya punya phobia ngobrol sama cewe loh 🤭 Tapi asli gak bohong, Brian sebenernya orang yang baik dan tulus hati banget 🥰 Tuhan memberkati & selamat melayani ya Brian! 🥳"
 			},
 			{
-				"divisi": "sekretaris",
-				"anggota": ["Nastasya"]
+				"nama": "Giuseppina Rosi Nastasya",
+				"divisi": "Sekretaris",
+				"profile": "Sekretaris kita di periode 2024/2025 ini adalah member terbaru KMKI Bayern - Giuseppina Rosi Nastasya atau biasa dikenal dengan Nastasya 😍 Saat ini, Nastasya sedang mengasah bahasa jermannya sambil au-pair di München, sebelum melanjutkan ausbildungnya sebagai Krankenschwester 💉 Selain hobby daydreamingnya, Nastasya juga suka nonton film dan baca novel fantasy untuk mendukung kehaluannya 😶 Satu request dari Nastasya: Nastasya pake s ya, tolong jangan sampai salah terus panggilnya Natasya 🤭 Selamat melayani NaStasya, semoga Tuhan selalu memberkatimu! 🥳"
 			},
 			{
-				"divisi": "bendahara",
-				"anggota": ["Felix"]
+				"nama": "Felix Gunawan",
+				"divisi": "Bendahara",
+				"profile": "Bendahara kita periode ini siapa sih yang ga pernah denger? 🤔 Felix Gunawan atau biasa dipanggil Felix sekarang sedang kuliah bachelor semester 5 di LMU di bidang Informatik plus Mathematik, dan kalau diliat-liat sih kayanya Felix bisa jadi hacker canggih nantinya 🤓 Felix ini juga seorang atlet basket yang sekaligus jago main bola dan main gitar (bikin meleleh banget gak sihhhh) 🫠 Funfact, Oppa kita yang aslinya peduli banget sama temen-temennya ini pernah di tawarin jadi model loh 😍 Selamat melayani ya Felix, semoga Tuhan memberkatimu selalu 🥳"
 			},
 			{
-				"divisi": "liturgi",
-				"anggota": ["Owen", "Kelvin"]
+				"nama": "Owen Wilson Chandra",
+				"divisi": "Liturgi",
+				"profile": "Gak ada yang lebih cocok sebagai PK Liturgi selain Owen Wilson Chandra atau biasa dipanggil Owen 🤩 Sambil kuliah bachelor Chemie semester 2 di TUM, Owen tetap bersemangat untuk terus melayani Tuhan meskipun sedang sibuk 😇 Orangnya simple, ga banyak bicara, tapi kalian tau gak sih kalau Owen ini suka banget main sepak bola ⚽ dan wandern 🏔 loh! Semangat terus dalam pelayanannya ya Owen, Tuhan bersertamu! 🥳"
 			},
 			{
-				"divisi": "acara",
-				"anggota": ["Nathan", "Deo"]
+				"nama": "Kelvin Chandra",
+				"divisi": "Liturgi",
+				"profile": "Kelvin Chandra, atau Kelvin, PK Liturgi kita di periode ini, adalah student bachelor semester 2 di TUM di bidang Maschinenwesen 🤓 Simple banget, Kelvin ini kalau lagi ada waktu kosong, hobbynya cuma makan dan tidur 😴 Efek dari hobbynya ini, Kelvin pun dijulukin sebagai rajanya rawon (karna jago bikin rawon atau jago makan rawon ya 🤔) Selamat melayani, Kelvin, semoga Tuhan memberkatimu selalu! 🥳"
 			},
 			{
-				"divisi": "publikasi",
-				"anggota": ["Aaron", "Gabi"]
+				"nama": "Gregorius Nathan Yamin",
+				"divisi": "Acara",
+				"profile": "PK Acara kita yang paling gas ini adalah Gregorius Nathan Yamin, atau biasa dipanggil Nathan (atau Yamin) 😍 si streber yang sedang kuliah bachelor semester 2 di TUM di bidang Maschinenwesen ini cinta banget sama KMKI sampai-sampai hobby dia adalah ikut acara KMKI 🥹 Disclaimer penting dari Nathan: dia bukan pemilik mie yamin 🍜 Selamat melayani, Nathan, semoga Tuhan memberkatimu selalu! 🥳"
 			},
 			{
-				"divisi": "konsumsi",
-				"anggota": ["Marcel", "Kevin"]
+				"nama": "Deo Gratias",
+				"divisi": "Acara",
+				"profile": "PK Acara kita satu lagi yang paling gas ini adalah Deo Gratias, biasa dikenal dengan Deo 🤩 Dulunya anak seminari Mertoyudan, sekarang Deo sedang kuliah master di EU Business School di bidang Business Administration 󰞦 Hobby Deo pun juga beragam, selain dia suka jalan-jalan dan nonton film, Deo juga suka banget main bola dan main air, atau yang lebih menarik lagi, dia suka banget main bola sambil main air 🤯 Kalau menurut Deo, funfact dia banyak banget sampai caption instagram gaakan cukup kalau di tulisin semuanya 🫡 Selamat melayani dan Tuhan memberkati ya Deo! 🥳"
 			},
 			{
-				"divisi": "usem",
-				"anggota": ["Raymondus"]
+				"nama": "Gabriel Aaron Rafael Thamin",
+				"divisi": "Urusan Publikasi",
+				"profile": "Yuk kenalan sama UPUB kita, Gabriel Aaron Rafael Thamin, atau singkatnya Aaron 😎 Saat ini, Aaron sedang kuliah bachelor semester 2 di TUM jurusan Informatik loh 🤓 Selain kulineran, Aaron juga seneng banget nonton film atau nonton F1 🏎 Untuk menunjukan dedikasi dan cintanya dia kepada Tuhan, Aaron juga rajin jadi misdinar di gereja loh 😇 Semangat terus dalam pelayanannya, Aaron, Tuhan memberkatimu selalu! 🥳"
+			},
+			{
+				"nama": "Gabrielle Lantipsatiti",
+				"divisi": "Urusan Publikasi",
+				"profile": "UPUB kita yang satu ini adalah Gabrielle Lantipsatiti, atau biasa dipanggil Gabi 🥰 Dibesarkan di Jerman, Gabi sekarang sedang kuliah master semester 2 di TUM jurusan Chemie loh 󰟯 Selain backen beragam dessert, Gabi juga seneng banget nonton konser dan dress up dengan kostum aneh-aneh 👽 Funfact tentang Gabi: kalau kalian cari di program TV jerman „Galileo“, kalian akan ketemu Gabi jadi salah satu polisi wanitanya loh 👀 Selamat melayani ya Gabi, semoga Tuhan selalu bersertamu! 🥳"
+			},
+			{
+				"nama": "Marcellinus Rafael Santoso",
+				"divisi": "Konsumsi",
+				"profile": "Yuk kenalan sama PK Konsumsi kita di periode ini - Kevin Wongso atau Kevin 😎 Kevin sekarang sedang kuliah bachelor semester 2 di TUM jurusan Maschinenwesen loh 󰙥 Selain jago banget main piano, Kevin juga seneng banget masak (cocok banget jadi PK Konsum gak sih), main badminton dan nonton film 📺 Walaupun baru mulai kuliah tahun lalu, saking jago main pianonya, Kevin sebenernya udah memegang gelar dari Associate of Royal School of Music (ARSM) sejak dia berumur 18 tahun loh 😍 Gak sabar nyobain makanan-makanan enak masakan Kevin nih jadinya 😋 Selamat melayani ya Kevin, semoga Tuhan memberkatimu selalu! 🥳"
+			},
+			{
+				"nama": "Kevin Wongso",
+				"divisi": "Konsumsi",
+				"profile": "Yuk kenalan sama PK Konsumsi kita di periode ini - Kevin Wongso atau Kevin 😎 Kevin sekarang sedang kuliah bachelor semester 2 di TUM jurusan Maschinenwesen loh 󰙥 Selain jago banget main piano, Kevin juga seneng banget masak (cocok banget jadi PK Konsum gak sih), main badminton dan nonton film 📺 Walaupun baru mulai kuliah tahun lalu, saking jago main pianonya, Kevin sebenernya udah memegang gelar dari Associate of Royal School of Music (ARSM) sejak dia berumur 18 tahun loh 😍 Gak sabar nyobain makanan-makanan enak masakan Kevin nih jadinya 😋 Selamat melayani ya Kevin, semoga Tuhan memberkatimu selalu! 🥳"
+			},
+			{
+				"nama": "Raymondus Kefi",
+				"divisi": "Urusan Seminar",
+				"profile": "Yuk kenalan sama USEM kita di periode ini, Raymondus Kefi, biasa dikenal dengan Raymond(us) 🤩 Lulusan jurusan Verfahrenstechnik & Naturstofftechnik di TU Dresden, Raymondus sekarang sedang memulai karirnya di bidang Verfahrenstechnik di pedesaan Peiting 🥸 Kalau lagi gak sibuk, Raymondus juga punya hobby-hobby menarik loh, contohnya wandern, jalan-jalan, apapun yang berhubungan dengan sepak bola dan musik, dan juga membaca buku-buku keren 🏔 Sebagai anak yang sudah merantau lebih dari setengah hidup dia, Raymondus biasanya mengisi kerinduan dia akan tanah airnya dengan cara karokean lagu-lagu indo lawas bareng temen-temennya kalau lagi iseng 🎤 Semangat terus pelayanannya, Raymondus! Tuhan memberkati! 🥳"
 			}
 		]
 	}
