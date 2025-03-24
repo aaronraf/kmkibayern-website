@@ -1,5 +1,8 @@
-# Notes untuk PK
-- Buat update list PK periode baru: clone repo & update databasePK.json, kasi notes yang jelas (nama, periode kerja) pas submit PR
+# Update buat PK baru
+- Fork repo
+- Clone repo secara local
+- Update [database-pk.json](src/assets/database-pk.json)
+- Submit pull request, kasi notes yang jelas (nama, periode, usw.)
 
 # React + Vite
 
