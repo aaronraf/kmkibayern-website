@@ -7,6 +7,7 @@ import Footer from "./elements/Footer";
 import EventCalendar from "./elements/EventCalendar";
 import { Button } from "@mui/material";
 import AssignmentIcon from "@mui/icons-material/Assignment";
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 
 const Home = () => {
 	return (
@@ -21,7 +22,9 @@ const Home = () => {
 				<Section title={"kolekte"} alignment={"center"} />
 				<Container>
 					<Row>
-						<Col>placeholder qr paypal</Col>
+						<Col>
+							<img src="" alt="placeholder qr paypal kolekte" />
+						</Col>
 						<Col>
 							<p>
 								“Peringatkanlah agar mereka itu berbuat baik, menjadi kaya dalam
@@ -30,8 +33,19 @@ const Home = () => {
 								waktu yang akan datang untuk mencapai hidup yang sebenarnya.”
 							</p>
 							<p>1 Timotius 6:17-19</p>
+							<Button
+								variant="contained"
+								startIcon={<VolunteerActivismIcon />}
+								size="medium"
+								target="_blank"
+								// TODO: Ganti link PayPal pas Übergabe PK baru
+								href="https://paypal.me/felixgunawan11">
+								Kolekte Online via PayPal
+							</Button>
 						</Col>
 					</Row>
+					{/* <Row>
+					</Row> */}
 				</Container>
 			</div>
 			<div className="sensus">
@@ -43,10 +57,10 @@ const Home = () => {
 				<Button
 					variant="contained"
 					startIcon={<AssignmentIcon />}
-					size="large"
+					size="medium"
 					target="_blank"
 					href="https://docs.google.com/forms/d/e/1FAIpQLSf-zqHk3eSzOWHRsV8REJIfGVhK4JBoD8-yRFwPXq03-iER2Q/viewform">
-					Klik di sini untuk isi sensus
+					Sensus KMKI Bayern
 				</Button>
 			</div>
 			<Footer />
