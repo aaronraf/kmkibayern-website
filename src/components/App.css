@@ -170,6 +170,15 @@
 	margin: 0.5rem;
 }
 
+.paypal-img {
+	height: auto;
+	width: 50%;
+}
+
+.paypal-col {
+	justify-items: center;
+}
+
 .events-container {
 	display: flex;
 	justify-content: center;

@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Navbar from "./elements/Navbar";
 import Hero from "./elements/Hero";
+import Paypal from "../assets/qr-paypal.png"
 import Section from "./elements/Section";
 import Footer from "./elements/Footer";
 import EventCalendar from "./elements/EventCalendar";
@@ -23,9 +24,9 @@ const Home = () => {
 				<Container>
 					<Row>
 						<Col>
-							<img src="" alt="placeholder qr paypal kolekte" />
+							<img className="paypal-img" src={Paypal} alt="placeholder qr paypal kolekte" />
 						</Col>
-						<Col>
+						<Col className="paypal-col">
 							<p>
 								“Peringatkanlah agar mereka itu berbuat baik, menjadi kaya dalam
 								kebajikan, suka memberi dan membagi dan dengan demikian
