@@ -13,7 +13,7 @@ const About = () => {
 		<div>
 			<Navbar activeLink="about" />
 			<div className="content">
-				{/* <h1 className="header">{t("about")}</h1>
+				<h1 className="header">{t("about")}</h1>
 				<div className="pk-img">
 					<img src={fotoPK} alt="Panitia Kerja 2024/2025" />
 					<p>Panitia Kerja KMKI Bayern Periode 2024/2025</p>
@@ -22,10 +22,10 @@ const About = () => {
 					<h2>Panitia Kerja 2024/2025</h2>
 					<Profile index={0} periode="2425" />
 				</div>
-				<div className="pk-lama"></div> */}
+				<div className="pk-lama"></div>
 
-				<h1 className="construction-title">Site Under Construction</h1>
-				<p className="construction-message">Please check back soon.</p>
+				{/* <h1 className="construction-title">Site Under Construction</h1>
+				<p className="construction-message">Please check back soon.</p> */}
 			</div>
 			<Footer />
 		</div>
