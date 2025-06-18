@@ -176,7 +176,11 @@
 }
 
 .paypal-col {
-	justify-items: center;
+	display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+    justify-content: center;
 }
 
 .events-container {

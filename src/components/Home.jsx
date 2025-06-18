@@ -45,8 +45,6 @@ const Home = () => {
 							</Button>
 						</Col>
 					</Row>
-					{/* <Row>
-					</Row> */}
 				</Container>
 			</div>
 			<div className="sensus">
