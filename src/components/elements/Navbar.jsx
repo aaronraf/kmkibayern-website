@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import logo from "../../assets/kmki-logo-biru.png";
+import logo from "../../assets/images/kmki-logo-biru.png";
 // import NavbarButton from "./NavbarButton";
 import { Link } from "react-router-dom";
 import { Container, Col } from "react-bootstrap";

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/hero-img.png";
+import img from "../../assets/images/hero-img.png";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
