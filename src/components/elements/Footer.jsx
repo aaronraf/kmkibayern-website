@@ -3,6 +3,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import { Fab } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkIcon from "@mui/icons-material/Link";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -22,6 +23,14 @@ const Footer = () => {
 						href="https://www.instagram.com/kmkibayern/"
 						className="footer-fab me-4">
 						<InstagramIcon />
+					</Fab>
+					<Fab
+						size="large"
+						color="primary"
+						target="_blank"
+						href="https://linkedin.com/company/kmkibayern/"
+						className="footer-fab me-4">
+						<LinkedInIcon />
 					</Fab>
 					<Fab
 						size="large"
