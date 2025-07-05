@@ -26,9 +26,11 @@ Anyone can visit the site to stay updated on KMKI Bayern events and activities.
 Untuk submit feature / update baru:
 - Fork repository ini
 - Clone repository ke local directory
-- Bikin update yang diinginkan
+- Buat update yang diinginkan
 - Push changes ke github
 - Submit pull request (beri keterangan jelas; nama, periode, usw.)
+
+Cara fork repository:
 
 ![Fork Guide](./fork-guide.gif)
 
