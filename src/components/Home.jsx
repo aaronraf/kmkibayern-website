@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Navbar from "./elements/Navbar";
 import Hero from "./elements/Hero";
-import Paypal from "../assets/images/qr-paypal.png"
+import Paypal from "../assets/images/qr-paypal.jpeg"
 import Section from "./elements/Section";
 import Footer from "./elements/Footer";
 import EventCalendar from "./elements/EventCalendar";
@@ -40,7 +40,7 @@ const Home = () => {
 								size="medium"
 								target="_blank"
 								// TODO: Ganti link PayPal pas Übergabe PK baru
-								href="https://paypal.me/felixgunawan11">
+								href="https://paypal.me/kmkibayern">
 								Kolekte Online via PayPal
 							</Button>
 						</Col>
