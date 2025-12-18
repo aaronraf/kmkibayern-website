@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Snowfall from "react-snowfall";
 import Navbar from "./elements/Navbar";
 import Hero from "./elements/Hero";
-import Paypal from "../assets/images/qr-paypal.jpeg"
+import Paypal from "../assets/images/qr-paypal.jpeg";
 import Section from "./elements/Section";
 import Footer from "./elements/Footer";
 import EventCalendar from "./elements/EventCalendar";
@@ -11,20 +12,31 @@ import AssignmentIcon from "@mui/icons-material/Assignment";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 
 const Home = () => {
+	const month = new Date().getMonth();
+
 	return (
 		<div>
+			{(month == 0 || month == 11) && (
+				<Snowfall style={{ position: "fixed" }} />
+			)}
 			<Navbar activeLink="home" />
 			<Hero />
 			<div className="content">
-				<Section title={"past-events"} alignment={"center"} />
+				{/* <Section title={"past-events"} alignment={"center"} /> */}
+				<h2 className="secondary-header">Acara Sebelumnya</h2>
 				<EventCalendar type="past" />
 			</div>
 			<div className="content">
-				<Section title={"kolekte"} alignment={"center"} />
+				{/* <Section title={"kolekte"} alignment={"center"} /> */}
+				<h2 className="secondary-header">Kolekte Online</h2>
 				<Container>
 					<Row>
 						<Col>
-							<img className="paypal-img" src={Paypal} alt="placeholder qr paypal kolekte" />
+							<img
+								className="paypal-img"
+								src={Paypal}
+								alt="placeholder qr paypal kolekte"
+							/>
 						</Col>
 						<Col className="paypal-col">
 							<p>
@@ -48,7 +60,8 @@ const Home = () => {
 				</Container>
 			</div>
 			<div className="sensus">
-				<Section title={"sensus"} />
+				{/* <Section title={"sensus"} /> */}
+				
 				<h5>
 					Kamu anggota akitf KMKI Bayern? Pastikan kamu sudah isi Sensus ya!
 				</h5>
