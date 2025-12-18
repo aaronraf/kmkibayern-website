@@ -14,7 +14,11 @@ const App = () => {
 	return (
 		<Router>
 			<div>
-				{(month == 11 || month <= 1) && <Snowfall />}
+				{(month == 11 || month <= 1) && <Snowfall style={{
+					position: "fixed",
+					width: "100vw",
+					height: "100vh"
+				}} />}
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/events" element={<Events />} />
