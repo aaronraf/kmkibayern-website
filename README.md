@@ -6,13 +6,14 @@ This is the official community landing page for [**KMKI Bayern**](https://instag
 
 ## 🧩 Features
 
-- Built with **React**
+- Built with **React** and **Vite**
 - Integrated with **Google Calendar API** to display past and upcoming events dynamically
 - Clean, simple design focused on accessibility and clarity
 
 ## 🔧 Tech Stack
 
 - [React](https://reactjs.org/)
+- [Vite](https://vite.dev)
 - Google Calendar API
 
 ## 📌 Usage
