@@ -53,7 +53,7 @@ const Home = () => {
 			<div className="sensus">
 				
 				<h5>
-					Kamu anggota akitf KMKI Bayern? Pastikan kamu sudah isi Sensus ya!
+					Kamu anggota aktif KMKI Bayern? Pastikan kamu sudah isi Sensus ya!
 				</h5>
 				<br />
 				<Button
