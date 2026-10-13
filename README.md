@@ -2,7 +2,7 @@
 
 This is the official community landing page for [**KMKI Bayern**](https://instagram.com/kmkibayern), designed for public exposure and easy access to events and information related to the Indonesian Catholic Student Community in Bavaria.
 
-🌐 **Live Site:** [kmkibayern.com](https://kmkibayern.com) - currently only in Indonesian
+🌐 **Live Site:** [kmkibayern-website.vercel.app](https://kmkibayern-website.vercel.app) - currently only in Indonesian
 
 ## 🧩 Features
 
